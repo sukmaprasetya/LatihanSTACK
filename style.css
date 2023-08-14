@@ -1,0 +1,230 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    font-family: 'ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #F2E3D0;   
+    color: #91b3d2;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 5%;
+    width: 85%;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 35px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    pointer-events: none;
+}
+.navbar a {
+    font-size: 25px;
+    color: #7C7D80;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+}
+.navbar .active {
+	color:#452d21;
+	font-weight: bold;
+}
+.navbar a:hover {
+    color: #452d21;
+}
+.home {
+    margin-left: 10%;
+    width: 85%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10%;
+}
+.konten {
+    margin-left: 0;
+    max-width: 600px;
+}
+.konten h1 {
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+.konten h1 span {
+    color: #452d21;
+}
+.konten h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+.konten p {
+    font-size: 16px;
+    color: #7C7D80;
+}
+.home-icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #91b3d2;
+    border-radius: 50%;
+    font-size: 20px;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 20px 0;
+}
+.home-img {
+    width: 300px;
+    height: 300px;
+}
+.home-img .page {
+    width: 100%;
+    height: 100%;
+    background: #452d21;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-img .page::after {
+    content: '';
+    position: absolute;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+.page .image {
+    position: relative;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    z-index: 1;
+    overflow: hidden;
+}
+.image img {
+    position: absolute;
+    max-width: 280px;
+    object-fit: cover ;
+}
+.about {
+    padding: 150px 50px;
+	width: 100%;
+}
+.about h1 {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-top: 150px;
+	color: #452d21;
+	word-spacing: 3px;
+	line-height: 30px;
+	font-size: 25px;
+}
+.education {
+    padding: 195px 50px;
+}
+.education h1{
+    font-size: 35px;
+    padding: 20px;
+    margin-left: 65px;
+}
+.edu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 0.5fr));
+    gap: 2px;
+}
+ 
+.edu {
+    color: #452d21;
+    display: flex;
+    margin: 25px 0;
+}
+.edu .line {
+    padding: 0 30px 0 150px;
+} 
+.edu .line div {
+    width: 2px;
+    height: 100%;
+    background: #91b3d2;
+    position: relative;
+}
+  
+.education-info p {
+    margin: 0 20px 14px 0;
+}
+.education-years {
+    margin: auto;
+}
+.education .line div::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #91b3d2;
+    border-radius: 50%;
+    position: absolute;
+    left: -6px;
+}
+.ex-list {
+    font-size: 18px;
+    color: #452d21;
+    display: flex;
+    grid-template-columns: 100%;
+}  
+.edu-right ul {
+    line-height: 25px;
+    font-weight: 500;
+    padding: 1rem 1rem;
+}
+.edu-right p {
+    color: #452d21;
+    font-size: 20px;
+    font-weight: 700;
+}
+.skill {
+    padding: 100px 50px;
+}
+.box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 500px;
+}
+.icon {
+	height: 300px;
+	width: 300px;
+	padding:30px 30px;
+	background: #91b3d2;
+	border-radius: 20px;
+	margin:15px;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+}
+.icon i {
+	font-size: 50px;
+	display: block;
+	text-align: center;
+	margin:25px 0;
+	color: #fff;
+}
+.icon h2 {
+    font-size: 27px;
+    color: #452d21;
+}
+.icon p {
+    padding: 15px;
+    font-size: 13x;
+    color: #fff;
+}
